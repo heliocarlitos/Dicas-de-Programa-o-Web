@@ -1,3 +1,4 @@
+## <a href="https://hcadeveloper.github.io/cursor-personalizado/" target="_blank">VISUALIZAR</a>
 # Licença MIT
 
 **Direitos autorais (c) <a href="https://github.com/hcadeveloper" target="_blank">HCA</a>**
