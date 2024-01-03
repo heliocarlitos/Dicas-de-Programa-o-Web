@@ -101,3 +101,79 @@ Aqui está um exemplo que altera dinamicamente o conteúdo e estilo de um elemen
 ```
 
 Ao abrir esse arquivo HTML no navegador, você verá que o título é alterado dinamicamente usando JavaScript. Este é apenas um exemplo básico; o DOM é vasto, e você pode realizar muitas operações diferentes para interagir com os elementos de uma página web. Conforme você avança no desenvolvimento web, a manipulação do DOM se torna uma parte essencial do seu conjunto de habilidades.
+
+<hr>
+
+# IMPORTANTE
+
+> [!IMPORTANT]
+> O uso excessivo de `innerHTML` pode resultar em problemas de segurança e desempenho. É recomendável, sempre que possível, adotar abordagens mais seguras e eficientes para manipulação do DOM.
+
+Ao criar novos elementos HTML dinamicamente no JavaScript, a abordagem com `createElement` e `appendChild` é preferível. Isso ajuda a evitar ataques de injeção de código e melhora a legibilidade e a manutenção do código.
+
+Aqui está um exemplo básico de como criar um elemento e adicioná-lo ao DOM usando `createElement` e `appendChild`:
+
+```javascript
+// Criar um novo elemento <div>
+const newDiv = document.createElement('div');
+
+// Definir propriedades do elemento, se necessário
+newDiv.textContent = 'Este é um novo elemento!';
+
+// Adicionar o novo elemento ao final do corpo da página
+document.body.appendChild(newDiv);
+```
+
+Essa abordagem é mais segura e eficiente do que manipular diretamente o `innerHTML`. Obrigado por trazer isso à tona para garantir boas práticas de codificação!
+
+Vamos criar um exemplo prático onde usaremos `createElement` e `appendChild` para adicionar dinamicamente um novo item de lista (`<li>`) a uma lista não ordenada (`<ul>`). Este é um caso bastante comum ao trabalhar com a manipulação do DOM.
+
+### HTML Inicial:
+
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo com createElement e appendChild</title>
+</head>
+<body>
+    <h2>Lista de Itens</h2>
+    <ul id="lista-itens">
+        <!-- Itens existentes -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### JavaScript (script.js):
+
+```javascript
+// Função para adicionar um novo item à lista
+function adicionarNovoItem() {
+    // Criar um novo elemento <li>
+    const novoItem = document.createElement('li');
+
+    // Definir o conteúdo do novo item
+    novoItem.textContent = 'Novo Item';
+
+    // Adicionar o novo item à lista (<ul>)
+    const lista = document.getElementById('lista-itens');
+    lista.appendChild(novoItem);
+}
+
+// Chamada da função ao carregar a página (apenas para fins de demonstração)
+adicionarNovoItem();
+```
+
+Neste exemplo, temos uma página HTML com uma lista não ordenada (`<ul>`) contendo três itens. O JavaScript incluído (`script.js`) contém uma função chamada `adicionarNovoItem` que cria um novo item de lista (`<li>`), define seu conteúdo como "Novo Item" e o adiciona à lista existente.
+
+Ao carregar a página, a função `adicionarNovoItem` é chamada, resultando na adição de um novo item à lista. A chamada da função está lá apenas para fins de demonstração; em um cenário real, você chamaria essa função em resposta a algum evento, como um clique em um botão.
+
+Essa abordagem é preferível ao uso de `innerHTML` porque é mais segura contra ataques de injeção de código e é mais eficiente em termos de desempenho.
