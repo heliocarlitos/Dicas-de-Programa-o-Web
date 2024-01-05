@@ -1,3 +1,5 @@
+## [Visualizar](https://hcadeveloper.github.io/Tema-Light-Dark/)
+
 # Documentação do Código HTML, CSS e JS para Alteração de Tema Light/Dark:
 
 Este código HTML, CSS e JavaScript é projetado para criar um tema light/dark alternável em uma página da web. A estrutura geral do código consiste em três partes principais: HTML para a estrutura da página, CSS para estilização e JavaScript para a lógica de alternância de tema. Vamos analisar cada parte:
