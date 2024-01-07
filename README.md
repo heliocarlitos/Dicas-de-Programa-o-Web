@@ -11,6 +11,13 @@
 **Sob os seguintes termos:**
 
 - **Atribuição** - Você deve dar o devido crédito, fornecer um link para a licença e indicar se foram feitas alterações. Você pode fazê-lo de qualquer forma razoável, mas não de forma que sugira que o licenciante endossa você ou o seu uso;
+
+**Link**
+
+```
+https://hcadeveloper.github.io/Licenca-MIT/
+```
+
 - **Não há restrições adicionais** - você não pode aplicar termos legais ou medidas tecnológicas que restrinjam legalmente outras pessoas a fazerem qualquer coisa que a licença permita.
 
 Este projecto está licenciado sob a [Creative Commons Atribuição 4.0 Internacional](https://creativecommons.org/).
