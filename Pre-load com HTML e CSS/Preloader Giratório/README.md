@@ -1,4 +1,4 @@
-## [VISUALIZAR](https://hcadeveloper.github.io/Preloader-Girat-rio/)
+## [👁️ VISUALIZAR](https://hcadeveloper.github.io/Preloader-Girat-rio/)
 
 # Documentação Interna: Preloader Giratório
 
