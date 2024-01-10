@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Snake</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fundo branco */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .snake-container {
+            width: 200px;
+            overflow: hidden;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .snake {
+            width: 100%;
+            height: 2.5px; /* Altura da "cobra" */
+            background-color: #000; /* Cor da "cobra" */
+            animation: snakeMove 1s linear infinite;
+        }
+
+        @keyframes snakeMove {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(200%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="snake-container">
+        <div class="snake"></div>
+        <p>C A R R E G A N D O . . .</p>
+    </div>
+</body>
+</html>
