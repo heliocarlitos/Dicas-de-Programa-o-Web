@@ -1,13 +1,5 @@
 # Meta Tags e Suas Funções
 
-## Estrutura da Página
-
-### Charset
-```html
-<meta charset="UTF-8">
-```
-Define o conjunto de caracteres utilizado na página como UTF-8, suportando a maioria dos caracteres de diferentes línguas.
-
 ### Viewport
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,20 +88,6 @@ Especifica a URL da imagem a ser exibida quando a página é compartilhada em re
 ```
 Indica o tipo de conteúdo da página. Neste caso, o tipo é definido como "website".
 
-## Google AdSense
-
-### Google AdSense Account
-```html
-<meta name="google-adsense-account" content="ca-pub-5182199658753427">
-```
-Informa o ID da conta do Google AdSense para vincular a página à conta de anúncios.
-
-### Google AdSense Script
-```html
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5182199658753427" crossorigin="anonymous"></script>
-```
-Carrega o script do Google AdSense de forma assíncrona para exibir anúncios na página, usando o ID de cliente especificado.
-
 ## Favicon
 
 ### Link para Favicon
@@ -117,6 +95,3 @@ Carrega o script do Google AdSense de forma assíncrona para exibir anúncios na
 <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/heliocarlitos/Imagens-da-HutaDev/main/Logos/Nossos%20Logos/huta_developer_logo.webp">
 ```
 Define o ícone que será exibido na aba do navegador quando a página estiver aberta, utilizando o link fornecido para a imagem.
-```
-
-Coloque este conteúdo no seu arquivo `README.md` para documentar as funções das meta tags utilizadas na sua página web.
