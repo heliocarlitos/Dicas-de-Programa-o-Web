@@ -34,7 +34,7 @@ Permite que a web app seja executada em modo de tela cheia em dispositivos iOS, 
 
 ### Description
 ```html
-<meta name="description" content="Somos a HutaDev, uma equipe de especialistas apaixonados por tecnologia e design gráfico, dedicados a transformar a interação entre pessoas e o mundo digital. Criamos sites modernos e responsivos, além de design gráfico impactante. Em nosso site, você encontra uma seleção de programas para PC, sistemas operacionais e aplicativos android mais usados, prontos para download. Também elaboramos currículos profissionais personalizados, garantindo que você se destaque no mercado. Na HutaDev, tudo é pensado para atender às suas necessidades específicas e garantir uma presença online atraente e eficiente.">
+<meta name="description" content="Somos a HutaDev, uma equipe de especialistas apaixonados por tecnologia e design gráfico, dedicados a transformar a interação entre pessoas e o mundo digital. Criamos sites modernos e responsivos, além de design gráfico impactante. Em nosso site, você encontra uma seleção de programas para PC, sistemas operacionais e aplicativos android mais usados, prontos para download. Também elaboramos currículos profissionais personalizados, garantindo que você se destaque no mercado. Na HutaDev, tudo é pensado para atender às suas necessidades específicas e garantir uma presença online atraente e eficiente">
 ```
 Fornece uma descrição breve e concisa do conteúdo da página para motores de busca e é exibida nos resultados de pesquisa.
 
