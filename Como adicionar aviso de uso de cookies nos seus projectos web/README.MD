@@ -14,3 +14,11 @@ O projeto é composto por três partes principais:
 ## Código
 
 ### HTML e JavaScript
+
+```html
+<div id="cookie-banner">
+        <p>Este site utiliza cookies para garantir que você tenha a melhor experiência. Ao continuar a navegar, você concorda com o uso de cookies.</p>
+        <button id="accept-btn">ACEITAR</button>
+        <button id="decline-btn">RECUSAR</button>
+</div>
+```
