@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Cookies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        #cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            color: #333;
+            padding: 15px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.299);
+            text-align: center;
+            z-index: 1000;
+            border-radius: 10px 10px 0 0;
+            box-sizing: border-box;
+        }
+        #cookie-banner p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        #cookie-banner button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+            transition: background 0.3s ease;
+        }
+        #accept-btn {
+            background: #28a745; /* Verde */
+        }
+        #accept-btn:hover {
+            background: #218838; /* Verde mais escuro */
+        }
+        #decline-btn {
+            background: #dc3545; /* Vermelho */
+        }
+        #decline-btn:hover {
+            background: #c82333; /* Vermelho mais escuro */
+        }
+        @media (max-width: 600px) {
+            #cookie-banner {
+                padding: 10px;
+            }
+            #cookie-banner p {
+                font-size: 14px;
+            }
+            #cookie-banner button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cookie-banner">
+        <p>Este site utiliza cookies para garantir que você tenha a melhor experiência. Ao continuar a navegar, você concorda com o uso de cookies.</p>
+        <button id="accept-btn">ACEITAR</button>
+        <button id="decline-btn">RECUSAR</button>
+    </div>
+
+    <script>
+        function showCookieBanner() {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+
+        // Verifica a decisão do usuário
+        if (localStorage.getItem('cookieConsent') !== 'accepted') {
+            showCookieBanner();
+        }
+
+        document.getElementById('accept-btn').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookie-banner').style.display = 'none';
+        });
+
+        document.getElementById('decline-btn').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            window.location.href = 'https://www.google.com';
+        });
+    </script>
+</body>
+</html>
