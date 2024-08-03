@@ -54,5 +54,6 @@ O projeto é composto por três partes principais:
 4. **Botões**: Estilos para distinguir "ACEITAR" e "RECUSAR".
 
 <br/>
+
 > [!WARNING]
 > Certifique-se de que a abordagem de cookies esteja em conformidade com as regulamentações locais, como o GDPR ou a CCPA, se aplicável.
