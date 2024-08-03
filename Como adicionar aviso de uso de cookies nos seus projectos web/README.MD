@@ -4,11 +4,10 @@ Este repositório contém um exemplo simples de um aviso de cookies para website
 
 ## Estrutura do Projeto
 
-O projeto é composto por três partes principais:
+O projeto é composto por duas partes:
 
 1. **HTML**: Estrutura do aviso de cookies.
 2. **JavaScript**: Lógica para exibir e esconder o aviso, e para armazenar a decisão do usuário.
-3. **CSS**: Estilização do aviso (incluso no código HTML para simplicidade).
 
 ## Código
 
