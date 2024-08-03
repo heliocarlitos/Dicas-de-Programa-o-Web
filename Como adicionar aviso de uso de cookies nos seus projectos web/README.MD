@@ -11,7 +11,7 @@ O projeto é composto por duas partes:
 
 ## Código
 
-### HTML e JavaScript
+### Código HTML
 
 ```html
 <div id="cookie-banner">
@@ -19,24 +19,26 @@ O projeto é composto por duas partes:
         <button id="accept-btn">ACEITAR</button>
         <button id="decline-btn">RECUSAR</button>
 </div>
+```
 
-<script>
-        function showCookieBanner() {
-            document.getElementById('cookie-banner').style.display = 'block';
-        }
-        // Verifica a decisão do usuário
-        if (localStorage.getItem('cookieConsent') !== 'accepted') {
-            showCookieBanner();
-        }
-        document.getElementById('accept-btn').addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookie-banner').style.display = 'none';
-        });
-        document.getElementById('decline-btn').addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'declined');
-            window.location.href = 'https://www.google.com';
-        });
-</script>
+### Código JavaScript
+
+```js
+function showCookieBanner() {
+    document.getElementById('cookie-banner').style.display = 'block';
+}
+// Verifica a decisão do usuário
+if (localStorage.getItem('cookieConsent') !== 'accepted') {
+    showCookieBanner();
+}
+document.getElementById('accept-btn').addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.getElementById('cookie-banner').style.display = 'none';
+});
+document.getElementById('decline-btn').addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'declined');
+    window.location.href = 'https://www.google.com';
+});
 ```
 
 # Como Funciona
