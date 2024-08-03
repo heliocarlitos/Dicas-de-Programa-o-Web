@@ -56,5 +56,5 @@ O projeto é composto por três partes principais:
 3. **Z-index**: 1000 para garantir que o aviso fique acima de outros elementos.
 4. **Botões**: Estilos para distinguir "ACEITAR" e "RECUSAR".
 
-> [!Notas Adicionais]
+> [!WARNING]
 > Certifique-se de que a abordagem de cookies esteja em conformidade com as regulamentações locais, como o GDPR ou a CCPA, se aplicável.
