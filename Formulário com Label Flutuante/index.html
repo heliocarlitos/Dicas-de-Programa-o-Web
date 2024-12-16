@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Elegante</title>
+  <style>
+    /* Estilos globais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .input-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-container label {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      background-color: #ffffff;
+      padding: 0 5px;
+      transition: all 0.3s ease;
+      color: #aaa;
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    .input-container input {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-container input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    .input-container input:focus + label,
+    .input-container input:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 14px;
+      color: #007bff;
+    }
+
+    .input-container input::placeholder {
+      color: transparent;
+    }
+
+    /* Botão */
+    .form-container button {
+      width: 100%;
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 12px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 20px;
+      }
+
+      .form-container h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Registe-se</h1>
+    <form>
+      <div class="input-container">
+        <input type="text" id="nome" placeholder=" " required>
+        <label for="nome">Nome Completo</label>
+      </div>
+      <div class="input-container">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">E-mail</label>
+      </div>
+      <div class="input-container">
+        <input type="password" id="senha" placeholder=" " required>
+        <label for="senha">Senha</label>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
