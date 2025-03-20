@@ -1,6 +1,6 @@
 # Licença MIT
 
-**Direitos autorais (c) <a href="https://github.com/hcadeveloper" target="_blank">HCA</a>**
+**Direitos autorais (c) <a href="https://github.com/hcadeveloper" target="reg">HCA</a>**
 
 **Você é livre para:** 
 
